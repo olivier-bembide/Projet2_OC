@@ -3,16 +3,170 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Projet n°2 transformez votre maquette en site web - OC</title>
+    <title> Transformez votre maquette en site web - Projet n°2 OC</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- codes css -->
     <link rel="stylesheet" href="codes.css">
+
+    <!--insertion police google-font : Raleway-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <!-- Insertion icon font awesome-->
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css"  />
+
   </head>
   <body>
+    <div class="container">
+      <header role="banner">
+        <figure>
+          <img src="/sources/images/logo/Reservia.png" alt="Reservia" />
+        </figure>
+        <nav role="navigation" aria-label="menu principal">
+          <ul>
+            <li><a href="#">Hébergements</a></li>
+            <li><a href="#">Activités</a></li>
+          </ul>
+        </nav>
+        <a href="#">S'incrire</a>
+      </header>
+      <section class="navigation secondaire">
+        <div>
+          <h1>Trouver votre hébergement pour des vacances de rêve.</h1>
+          <p> En plein centre ville ou en pleine nature.</p>
+        </div>
+        <div role="search">
+          <form method="post" action="">
+            <label for="ville"> <i class="fas fa-map-marker-alt"></i> </label>
+            <input type="text" id="ville" title="rechercher un hôtel">
+            <button type="submit" value="Rechercher un hotel">Rechercher</button>
+          </form>
+        </div>
+
+        <div class="containeur-filtre">
+          <h2>Filtres</h2>
+          <div class="filtre1">
+            <button type="button" value="économique" class="bouton_filtre_eco">
+                <i class="fas fa-money-bill-wave"></i>
+              Economique
+            </button>
+            <button type="button" value="Familial" class="bouton_filtre_fami">
+                <i class="fas fa-child"></i>
+              Familial
+            </button>
+          </div>
+          <div class="filtre2">
+            <button type="button" value="romantique" class="bouton_filtre_roman">
+              <i class="fas fa-heart"></i>
+              Romantique
+            </button>
+            <button type="button" value="animaux autorisés" class="bouton_filtre_animaux">
+                <i class="fas fa-child"></i>
+              Animaux autorisés
+            </button>
+          </div>
+
+          <div class="info">
+            <i class="fas fa-info"></i>
+            <p>Plus de 500 logements disponibles dans cette ville.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <main>
+        <div class="hebergements-marseille">
+          <section sec-gauche-hebergement>
+            <h3> Hébergements à Marseille</h3>
+            <div class="container-hebergement">
+              <div class="auberge-la-cannebiere">
+                <a href="#">
+                  <figure>
+                    <img src="/sources/images/hebergements\4_small/auberge-la-cannebiere.jpg" alt="Auberge la cannebière"/>
+                    <figcaption>
+                      <p>Auberge la cannebière</p>
+                      <p>Nuit à partir de <strong> 25 &euros </strong></p>
+                      <div class="etoile-la-cannebiere">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="hotel-du-port">
+                <a href="#">
+                  <figure>
+                    <img src="/sources/images/hebergements\4_small/hotel-du-port.jpg" alt="Auberge la cannebière"/>
+                    <figcaption>
+                      <p>Hôtel du port</p>
+                      <p>Nuit à partir de <strong> 52 <i class="fa fa-eur" aria-hidden="true"></i> </strong></p>
+                      <span class="etoile-hotel-du-port">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </span>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+            </div>
+          </section>
+          <section sec-droite-hebergement>
+
+          </section>
+
+        </div>
+        <div activites-marseille>
+
+        </div>
+
+      </main>
+    </div>
+
+    <footer role="contentinfo">
+      <div class="sec-footer">
+        <div class="a-propos">
+          <hn></hn>
+         <ul>
+           <li>Fonctionnement du site</li>
+           <li>Conditions générales de vente</li>
+           <li>Données et confidentialités</li>
+         </ul>
+        </div>
+        <div class="nos-hebergements">
+          <hn></hn>
+          <ul>
+            <li>Charte de qualité</li>
+            <li>Soumettre votre hôtel</li>
+          </ul>
+        </div>
+        <div class="assistance">
+            <hn></hn>
+            <ul>
+              <li>Centre d'aide</li>
+              <li> Nous contacter</li>
+            </ul>
+        </div>
+      </div>
+
+
+    </footer>
+
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
