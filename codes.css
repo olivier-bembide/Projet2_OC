@@ -9,14 +9,28 @@ body{
 
 .sec-footer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
+
 
 .sec-footer div {
-  width: 100%;
+  width: 33.33%;
 }
 
+@media screen and (max-width:678px){
+  .sec-footer{
+    display: flex;
+    flex-direction: column;
 
+  }
+
+    .sec-footer div{
+       width: 100%;
+       margin-left: 40px;
+
+    }
+
+}
 
 
 
