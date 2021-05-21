@@ -108,6 +108,12 @@ form i {
 
 /**Styles hébergement à Marseille**/
 
+.titre{
+  font-size: 0.9em;
+  position: relative;
+  left: 30px;
+}
+
 
 .hebergements-marseille{
   display: flex;
@@ -222,13 +228,6 @@ figcaption p:nth-child(1){
   display: flex;
 }
 
-.sec-droite img{
-  height: 130px;
-  width: 120px;
-  margin-right: 20px;
-}
-
-
 .titre-populaires{
 display: flex;
 flex-direction: row;
@@ -256,6 +255,53 @@ flex-direction: row;
 
 .etoiles-de-la-mer :nth-child(4), .etoiles-de-la-mer :nth-child(5){
   color:#F2F2F2;
+}
+
+.afficher{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 30px;
+  position: relative;
+  top: 2px;
+}
+
+/*** Les plus populaires **/
+
+.sec-droite img{
+  height: 115px;
+  width: 120px;
+  margin-right: 20px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+.heberg{
+  border: 5px solid #FFF;
+  border-radius: 20px;
+  padding: 2px;
+  width: 300px;
+  background-color: #FFF;
+}
+
+.populaires figcaption p{
+  line-height: 15px;
+}
+
+.etoiles{
+  position: relative;
+  top: 25px;
+}
+
+.chambres-hote :nth-child(5), .bleu-blanc :nth-child(5){
+  color:#f2f2f2;
+}
+
+.fa-chart-line{
+  position: relative;
+  left: 130px;
+  top: 20px;
 }
 
 /** Styles Activités à Marseille**/
