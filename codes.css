@@ -1,38 +1,273 @@
 /*Styles généraux */
 
-body{
+body {
   font-family: 'Raleway', 'Trebuchet MS', sans-serif;
   max-width: 90%;
-  border: 1px solid blue;
-  font-size: 0.87em;
+  font-size: 1rem;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
-.sec-footer{
+h1 {
+  font-size: 1.2em;
+}
+
+header img {
+  float: left;
+  width: 150px;
+  margin-top: 20px;
+}
+
+
+header nav {
+  float: right;
+}
+
+.navigation {
+  clear: both;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 20px 30px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+}
+
+form button {
+  margin-left: -0.5px;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 0.8em;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: 0.5px solid grey;
+  font-family: Raleway;
+}
+
+.fa-map-marker-alt {
+  color: red;
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+form i {
+  background-color: blue;
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px 0px 0px 10px;
+  text-align: center;
+}
+
+.containeur-filtre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bouton {
+  border: 1px solid gray;
+  width: 180px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 30px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.filtre_eco {
+  text-align: center;
+}
+.filtre_eco i {
+  padding-right: 40px;
+}
+
+.filtre_fami i {
+  position: relative;
+  right: 40px;
+  background-color: gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+/**Styles hébergement à Marseille**/
+
+
+.hebergements-marseille {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hebergements-marseille figure{
+  margin: 0px;
+}
+
+.sec-gauche{
+  width: 60%;
+}
+
+.sec-gauche img {
+  width: 200px;
+}
+
+.sec-gauche article{
+  margin: 0px;
+}
+
+
+.sec-droite{
+  width: auto;
+}
+
+.sec-droite img{
+  width: 100px;
+}
+
+.sec-droite article{
+  margin: 0px;
+}
+
+article{
+  font-size: 0.6em;
+}
+
+.container-hebergement{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.containeur-populaires article{
+  margin-bottom: 20px;
+}
+
+.hebergement{
+  width: 200px;
+  margin: 4px;
+}
+
+@media screen and (max-width: 678px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  nav ul li {
+    margin: 20px 10px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .inscription a {
+    position: relative;
+    bottom: 80px;
+  }
+}
+
+.info{
+  display: flex;
+}
+
+.sec-gauche img{
+  height: 120px;
+}
+
+.sec-droite img{
+  height: 94px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.titre-populaires{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+.populaires{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 0;
+flex-shrink: 0;
+flex-basis: auto;
+}
+
+
+/** Styles Activités à Marseille**/
+
+.vieux-port img, .calanques img{
+  width: 280px;
+  height: 300px;
+}
+
+.haut img, .bas img{
+  width: 280px;
+  height: 130px ;
+}
+
+.range{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.range figure{
+  margin: 0px;
+}
+
+
+/** Styles Footer **/
+
+.sec-footer {
   display: flex;
   flex-direction: row;
 }
-
 
 .sec-footer div {
   width: 33.33%;
 }
 
-@media screen and (max-width:678px){
-  .sec-footer{
+
+
+@media screen and (max-width: 678px) {
+  .sec-footer {
     display: flex;
     flex-direction: column;
-
   }
 
-    .sec-footer div{
-       width: 100%;
-       margin-left: 40px;
-
-    }
-
+  .sec-footer div {
+    width: 100%;
+    margin-left: 40px;
+  }
 }
-
-
-
-
-

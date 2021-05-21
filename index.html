@@ -11,6 +11,9 @@
     <meta name="description" content="Hôtel Reservia">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--Reset css-->
+    <link rel="stylesheet"  href="reset.css"/>
+
     <!-- codes css -->
     <link rel="stylesheet" href="codes.css">
 
@@ -25,16 +28,14 @@
   <body>
     <div class="container">
       <header role="banner">
-        <figure>
-          <img src="/sources/images/logo/Reservia.png" alt="Reservia" />
-        </figure>
-        <nav role="navigation" aria-label="menu principal">
-          <ul>
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
-          </ul>
-        </nav>
-        <a href="#">S'incrire</a>
+        <img src="/sources/images/logo/Reservia.png" alt="Reservia"/>
+          <nav role="navigation" aria-label="menu principal" class="text">
+            <ul>
+              <li><a href="#">Hébergements</a></li>
+              <li><a href="#">Activités</a></li>
+              <li class="inscription"><a href="#">S'incrire</a></li>
+            </ul>
+          </nav>
       </header>
       <section class="navigation secondaire">
         <div>
@@ -50,40 +51,34 @@
         </div>
 
         <div class="containeur-filtre">
-          <h2>Filtres</h2>
-          <div class="filtre1">
-            <button type="button" value="économique" class="bouton_filtre_eco">
+            <h2>Filtres</h2>
+            <button type="button" value="économique" class="bouton filtre_eco">
                 <i class="fas fa-money-bill-wave"></i>
               Economique
             </button>
-            <button type="button" value="Familial" class="bouton_filtre_fami">
+            <button type="button" value="Familial" class="bouton filtre_fami">
                 <i class="fas fa-child"></i>
               Familial
             </button>
-          </div>
-          <div class="filtre2">
-            <button type="button" value="romantique" class="bouton_filtre_roman">
+            <button type="button" value="romantique" class="bouton filtre_roman">
               <i class="fas fa-heart"></i>
               Romantique
             </button>
-            <button type="button" value="animaux autorisés" class="bouton_filtre_animaux">
+            <button type="button" value="animaux autorisés" class="bouton filtre_animaux">
                 <i class="fas fa-child"></i>
               Animaux autorisés
             </button>
-          </div>
-
-          <div class="info">
-            <i class="fas fa-info"></i>
-            <p>Plus de 500 logements disponibles dans cette ville.</p>
-
-          </div>
+        </div>
+        <div class="info">
+          <p><i class="fas fa-info"></i></p>
+          <p>Plus de 500 logements disponibles dans cette ville.</p>
         </div>
 
       </section>
 
       <main>
         <div class="hebergements-marseille">
-          <section sec-gauche-hebergement>
+          <section sec-gauche-hebergement class="sec-gauche">
             <h3> Hébergements à Marseille</h3>
             <div class="container-hebergement">
               <article class="hebergement la-cannebiere">
@@ -113,7 +108,7 @@
                     <figcaption>
                       <p>Hôtel du port</p>
                       <p>Nuit à partir de <strong> 52 &#128</strong></p>
-                     <span class="etoiles-la-cannebiere">
+                      <span class="etoiles-la-cannebiere">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -132,7 +127,7 @@
                     <figcaption>
                       <p>Hôtel les mouettes</p>
                       <p>Nuit à partir de <strong> 76 &#128 </strong></p>
-                     <span class="etoiles-les-mouettes">
+                      <span class="etoiles-les-mouettes">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -151,7 +146,7 @@
                     <figcaption>
                       <p>Hôtel de la mer</p>
                       <p>Nuit à partir de <strong> 46 &#128 </strong></p>
-                     <span class="etoiles-de-la-mer">
+                      <span class="etoiles-de-la-mer">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -170,7 +165,7 @@
                     <figcaption>
                       <p>Auberge le Panier</p>
                       <p>Nuit à partir de <strong> 23 &#128 </strong></p>
-                     <span class="etoiles-le-panier">
+                      <span class="etoiles-le-panier">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -189,7 +184,7 @@
                     <figcaption>
                       <p>Hôtel chez Amina</p>
                       <p>Nuit à partir de <strong> 96 &#128 </strong></p>
-                     <span class="etoiles-chez-amina">
+                      <span class="etoiles-chez-amina">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -200,23 +195,23 @@
                   </figure>
                 </a>
               </article>
-              <button type="button" value="Afficher plus d'hébergement">Afficher plus</button>
             </div>
+            <button type="button" value="Afficher plus d'hébergement">Afficher plus</button>
           </section>
-          <section sec-droite-hebergement>
-            <div>
+          <section sec-droite-hebergement class="sec-droite">
+            <div class="titre-populaires">
               <h3> Les plus populaires</h3>
               <i class="fas fa-chart-line"></i>
             </div>
-            <div>
+            <div class="containeur-populaires">
               <article class="heberg soleil-matin">
                 <a href="#">
-                  <figure>
+                  <figure class="populaires">
                     <img src="/sources/images/hebergements/4_small/hotel-le-soleil-du-matin.jpg" alt="">
                     <figcaption>
                       <p> Hôtel le soleil du matin</p>
                       <p>Nuit à partir de <strong> 128 &#128 </strong></p>
-                     <span class="etoiles-chez-amina">
+                      <span class="etoiles-chez-amina">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -229,12 +224,12 @@
               </article>
               <article class="heberg chambre-hote">
                 <a href="#">
-                  <figure>
+                  <figure class="populaires">
                     <img src="/sources/images/hebergements/4_small/au-coeur-de-leau.jpg" alt="">
                     <figcaption>
                       <p> Au coeur de l'eau chambres d'hôtes</p>
                       <p>Nuit à partir de <strong> 171 &#128 </strong></p>
-                     <span class="etoiles-chambres-hote">
+                      <span class="etoiles-chambres-hote">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -247,12 +242,12 @@
               </article>
               <article class="heberg bleu-blanc">
                 <a href="#">
-                  <figure>
+                  <figure class="populaires">
                     <img src="/sources/images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg" alt="">
                     <figcaption>
                       <p> Hôtel tout bleu et blanc</p>
                       <p>Nuit à partir de <strong> 68 &#128 </strong></p>
-                     <span class="etoiles-chambres-hote">
+                      <span class="etoiles-chambres-hote">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -269,7 +264,8 @@
         </div>
         <div cont-activites-marseille>
           <h3>Activités à Marseilles</h3>
-          <article class="activites vieux-port">
+          <div class="range">
+              <article class="activites vieux-port">
             <a href="#">
               <figure>
                 <img src="/sources/images/activites/4_small/vieux-port.jpg" alt="" />
@@ -333,7 +329,7 @@
               </a>
             </article>
           </div>
-
+          </div>
         </div>
 
       </main>
@@ -343,11 +339,11 @@
       <div class="sec-footer">
         <div class="a-propos">
           <h4>A propos</h4>
-         <ul>
-           <li>Fonctionnement du site</li>
-           <li>Conditions générales de vente</li>
-           <li>Données et confidentialités</li>
-         </ul>
+          <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialités</li>
+          </ul>
         </div>
         <div class="nos-hebergements">
           <h4>Nos hébergements</h4>
@@ -364,8 +360,6 @@
             </ul>
         </div>
       </div>
-
-
     </footer>
 
     <!--[if lt IE 7]>
