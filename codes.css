@@ -5,7 +5,6 @@ body {
   width: 80%;
   font-size: 1rem;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 /** Styles Hébergements à Marseilles **/
@@ -237,22 +236,100 @@ figcaption p:nth-child(1){
 }
 
 
-
-
-
-
-
-
 /** Styles Footer **/
 
 .sec-footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .sec-footer div {
   width: 33.33%;
 }
+
+footer{
+  background-color: #f2f2f2;
+  margin-top: 50px;
+}
+
+footer h4{
+  margin-left: 2.7em;
+  font-size: 0.8em;
+}
+
+footer li{
+  line-height: 30px;
+  list-style-type: none;
+}
+
+
+
+/** Styles  @media screen **/
+
+
+
+/** Styles Activités à Marseille @media screen **/
+
+@media screen and (max-width: 678px){
+
+  .cont-activites-marseille{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .range{
+    display: block;
+  }
+
+  .range img{
+    min-width: 15em;
+    flex-grow: 1;
+  }
+}
+
+
+
+
+
+
+
+/** Styles Footer @media screen  **/
+
+@media screen and (max-width: 678px) {
+
+  footer{
+    min-width: 20em;
+    margin: 0;
+  }
+
+  footer h4{
+  margin-left: 0;
+  font-size: 0.8em;
+}
+
+footer ul{
+ position: relative;
+ right: 40px;
+}
+
+
+  .sec-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .sec-footer div {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+
+}
+
 
 
 
