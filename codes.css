@@ -5,108 +5,47 @@ body {
   width: 80%;
   font-size: 1rem;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
-h1 {
-  font-size: 1.2em;
-}
+/** Styles Hébergements à Marseilles **/
 
-header img {
-  float: left;
-  width: 150px;
-  margin-top: 20px;
-}
-
-
-header nav {
-  float: right;
-}
-
-.navigation {
-  clear: both;
-}
-
-nav ul {
+.hebergements-marseille{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+/*
+main .hebergements-marseille{
+  margin-right: 0px;
+}*/
 
-nav ul li {
-  margin: 20px 30px;
-  list-style-type: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-form {
-  display: flex;
-}
-
-form button {
-  margin-left: -0.5px;
-  padding: 10px;
-  border-radius: 0px 20px 20px 0px;
-  font-size: 0.8em;
-  background-color: blue;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  border: 0.5px solid grey;
-  font-family: Raleway;
-}
-
-.fa-map-marker-alt {
-  color: red;
-}
-
-form {
-  margin-bottom: 50px;
-}
-
-form i {
-  background-color: blue;
-  height: 30px;
-  padding: 5px;
-  border-radius: 10px 0px 0px 10px;
-  text-align: center;
-}
-
-.containeur-filtre {
+.container-hebergement{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
-.bouton {
-  border: 1px solid gray;
-  width: 180px;
-  height: 50px;
-  margin: 5px;
-  border-radius: 30px;
-  font-size: 0.7em;
-  font-weight: bold;
+.containeur-populaires{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 25px;
 }
 
-.filtre_eco {
-  text-align: center;
-}
-.filtre_eco i {
-  padding-right: 40px;
+.containeur-populaires article{
+  margin-bottom: 20px;
 }
 
-.filtre_fami i {
-  position: relative;
-  right: 40px;
-  background-color: gray;
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
+.populaires{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
-
-/**Styles hébergement à Marseille**/
 
 .titre{
   font-size: 0.9em;
@@ -114,99 +53,107 @@ form i {
   left: 30px;
 }
 
-
-.hebergements-marseille{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+main div{
+  margin: 0;
 }
 
+.fa-chart-line{
+  position: relative;
+  right: 25px;
+  top: 5px;
+}
 
 .hebergements-marseille figure{
-  margin: 0px;
+  margin: 0;
 }
 
+.la-cannebiere img, .hotel-du-port img, .les-mouettes img{
+  height: 5em;
+  border-radius: 1.25em 1.25em 0em 0em ;
+}
+.de-la-mer img, .chez-amina img, .le-panier img{
+  height: 5em;
+  border-radius: 1.25em 1.25em 0em 0em;
+}
+
+.sec-gauche img {
+  width: 9em;
+}
+
+.sec-gauche{
+  flex-basis: 62%;
+  background-color: #f2f2f2;
+  border-radius: 1.25em;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.sec-gauche article{
+  margin: 0.325em 0.625em;
+}
+
+.sec-gauche{
+  margin-right: 20px;
+}
+
+.sec-droite{
+  flex-basis: 36%;
+  background-color: #f2f2f2;
+  border-radius: 0.93em;
+}
+
+.sec-droite img{
+  height: 6.18em;
+  width: 6.5em;
+  border-radius: 0.625em 0em 0em 0.625em;
+  margin-right: 1.25em;
+}
+
+.sec-droite article{
+  margin: 12px;
+}
 
 .hebergements-marseille article a{
   text-decoration: none;
 }
 
+figcaption p{
+  line-height: 8px;
+  margin-top: 5px;
+  color: #000;
+  font-size: 0.7em;
+}
+
 .hebergement{
-  border:5px solid #FFF;
-  border-radius: 20px;
+  border: 0.31em solid #FFF;
+  border-radius: 1.25em;
   background-color: #FFF;
-  height: 175px;
+  height: 9.93em;
   width: auto;
 }
 
-.la-cannebiere img, .hotel-du-port img, .les-mouettes img{
-  height: 100px;
-  border-radius:20px 20px 0px 0px ;
-}
-.de-la-mer img, .chez-amina img, .le-panier img{
-  height: 100px;
-  border-radius: 20px 20px 0px 0px;
+.titre-populaires{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
 }
 
-.sec-gauche{
-  width: 63%;
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  margin-right: 15px;
-  flex: 1 0 auto;
+.populaires figcaption p{
+  line-height: 0.93;
 }
 
-.sec-gauche img {
-  width: 170px;
+.heberg{
+  border: 0.313em solid #FFF;
+  border-radius: 1.25em;
+  width: 15em;
+  padding: 2px;
+
+  background-color: #FFF;
 }
 
-
-.sec-gauche article{
-  margin: 0px;
-}
-
-
-.sec-droite{
-  width: 35%;
-  background-color: #f2f2f2;
-  border-radius: 15px;
-}
-
-.sec-droite article{
-  margin: 0px;
-}
-
-article{
-  font-size: 0.6em;
-}
-
-.container-hebergement{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.containeur-populaires{
-  padding-left : 20px;
-}
-
-
-.containeur-populaires article{
-  margin-bottom: 20px;
-}
-
-.container-hebergement article{
-  margin-bottom: 25px;
-}
-
-.container-hebergement figure{
-  margin-bottom: 20px;
-}
-
-.fig .etoiles-la-cannebiere{
-  line-height: 20px;
+.populaires figcaption p{
+  line-height: 15px;
 }
 
 figcaption p{
@@ -224,22 +171,6 @@ figcaption p:nth-child(1){
   line-height: 20px;
 }
 
-.info{
-  display: flex;
-}
-
-.titre-populaires{
-display: flex;
-flex-direction: row;
-}
-
-.populaires{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1 0 auto;
-}
-
 .fig{
   position: relative;
   top: 10px;
@@ -247,6 +178,7 @@ flex-direction: row;
 
 .fas{
   color: #0065FC;
+  font-size: 12px;
 }
 
 .etoiles-la-cannebiere :nth-child(5), .etoiles-les-mouettes :nth-child(5), .le-panier :nth-child(5){
@@ -264,56 +196,24 @@ flex-direction: row;
   font-weight: bold;
   margin-left: 30px;
   position: relative;
-  top: 2px;
-}
-
-/*** Les plus populaires **/
-
-.sec-droite img{
-  height: 115px;
-  width: 120px;
-  margin-right: 20px;
-  border-radius: 10px 0px 0px 10px;
+  top: 10px;
 }
 
 
-.heberg{
-  border: 5px solid #FFF;
-  border-radius: 20px;
-  padding: 2px;
-  width: 300px;
-  background-color: #FFF;
-}
+/** Styles Activités Marseilles **/
 
-.populaires figcaption p{
-  line-height: 15px;
-}
-
-.etoiles{
-  position: relative;
-  top: 25px;
-}
-
-.chambres-hote :nth-child(5), .bleu-blanc :nth-child(5){
-  color:#f2f2f2;
-}
-
-.fa-chart-line{
-  position: relative;
-  left: 130px;
-  top: 20px;
-}
-
-/** Styles Activités à Marseille**/
 
 .vieux-port img, .calanques img{
-  width: 255px;
-  height: 300px;
+  width: 10.93em;
+  height: 15em;
+  border-radius: 10px;
 }
 
 .haut img, .bas img{
   width: 255px;
   height: 110px ;
+  border-radius: 10px;
+  margin: 8px;
 }
 
 .range{
@@ -326,6 +226,21 @@ flex-direction: row;
 .range figure{
   margin: 0px;
 }
+
+
+.activite-mar p{
+  font-size: 0.6em;
+}
+
+.activites a{
+  text-decoration: none;
+}
+
+
+
+
+
+
 
 
 /** Styles Footer **/
@@ -341,14 +256,4 @@ flex-direction: row;
 
 
 
-@media screen and (max-width: 678px) {
-  .sec-footer {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .sec-footer div {
-    width: 100%;
-    margin-left: 40px;
-  }
-}

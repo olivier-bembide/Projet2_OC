@@ -1,0 +1,361 @@
+
+h1 {
+  font-size: 1.2em;
+}
+
+header img {
+  float: left;
+  width: 150px;
+  margin-top: 20px;
+}
+
+
+header nav {
+  float: right;
+}
+
+.navigation {
+  clear: both;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 20px 30px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+}
+
+form button {
+  margin-left: -0.5px;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 0.8em;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: 0.5px solid grey;
+  font-family: Raleway;
+}
+
+.fa-map-marker-alt {
+  color: red;
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+form i {
+  background-color: blue;
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px 0px 0px 10px;
+  text-align: center;
+}
+
+.containeur-filtre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bouton {
+  border: 1px solid gray;
+  width: 180px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 30px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.filtre_eco {
+  text-align: center;
+}
+.filtre_eco i {
+  padding-right: 40px;
+}
+
+.filtre_fami i {
+  position: relative;
+  right: 40px;
+  background-color: gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+/**Styles hébergement à Marseille**/
+
+.titre{
+  font-size: 0.9em;
+  position: relative;
+  left: 30px;
+}
+
+/*
+.hebergements-marseille{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}*/
+
+
+.hebergements-marseille figure{
+  margin: 0px;
+}
+
+
+.hebergements-marseille article a{
+  text-decoration: none;
+}
+
+/*
+.hebergement{
+  border:5px solid #FFF;
+  border-radius: 20px;
+  background-color: #FFF;
+  height: 175px;
+  width: auto;
+} */
+
+.la-cannebiere img, .hotel-du-port img, .les-mouettes img{
+  height: 100px;
+  border-radius:20px 20px 0px 0px ;
+}
+.de-la-mer img, .chez-amina img, .le-panier img{
+  height: 100px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.sec-gauche{
+  width: 63%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin-right: 15px;
+  flex: 1 0 auto;
+}
+
+/*
+.sec-gauche img {
+  width: 175px;
+}*/
+
+/*
+.sec-gauche article{
+  margin: 0px;
+}*/
+
+
+.sec-droite{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*width: 35%;*/
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+
+/*
+.sec-droite article{
+  margin: 0px;
+}*/
+
+article{
+  font-size: 0.6em;
+}
+
+/*
+.container-hebergement{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}*/
+
+/******* à revoir  ******/
+
+.containeur-populaires{
+  padding-left : 20px;
+}
+
+
+.containeur-populaires article{
+  margin-bottom: 20px;
+}
+
+
+.container-hebergement article{
+  margin-bottom: 25px;
+}
+
+
+.container-hebergement figure{
+  margin-bottom: 20px;
+}
+
+.fig .etoiles-la-cannebiere{
+  line-height: 20px;
+}
+
+figcaption p{
+  line-height: 8px;
+  margin-top: 5px;
+  color: #000;
+}
+
+figcaption p:nth-child(1){
+  font-weight: bold;
+  color: #000;
+}
+
+.heberg figcaption p{
+  line-height: 20px;
+}
+
+.info{
+  display: flex;
+}
+
+/*
+.titre-populaires{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}*/
+
+/*
+.populaires{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+} */
+
+.fig{
+  position: relative;
+  top: 10px;
+}
+
+.fas{
+  color: #0065FC;
+}
+/*
+.etoiles-la-cannebiere :nth-child(5), .etoiles-les-mouettes :nth-child(5), .le-panier :nth-child(5){
+  color:#F2F2F2;
+}
+
+.etoiles-de-la-mer :nth-child(4), .etoiles-de-la-mer :nth-child(5){
+  color:#F2F2F2;
+} */
+
+.afficher{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 30px;
+  position: relative;
+  top: 2px;
+}
+
+/*** Les plus populaires **/
+
+.sec-droite img{
+  height: 115px;
+  width: 120px;
+  margin-right: 20px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+.heberg{
+  border: 5px solid #FFF;
+  border-radius: 20px;
+  padding: 2px;
+  width: 25em;
+  background-color: #FFF;
+}
+
+.populaires figcaption p{
+  line-height: 15px;
+}
+
+.etoiles{
+  position: relative;
+  top: 25px;
+}
+
+.chambres-hote :nth-child(5), .bleu-blanc :nth-child(5){
+  color:#f2f2f2;
+}
+
+/*
+.fa-chart-line{
+  position: relative;
+  left: 130px;
+  top: 20px;
+}*/
+
+/** Styles Activités à Marseille**/
+
+.vieux-port img, .calanques img{
+  width: 255px;
+  height: 300px;
+}
+
+.haut img, .bas img{
+  width: 255px;
+  height: 110px ;
+}
+
+.range{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.range figure{
+  margin: 0px;
+}
+
+
+/** Styles Footer **/
+
+.sec-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.sec-footer div {
+  width: 33.33%;
+}
+
+@media screen and (max-width: 678px) {
+  .sec-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec-footer div {
+    width: 100%;
+    margin-left: 40px;
+  }
+}
+
