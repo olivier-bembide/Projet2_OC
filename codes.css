@@ -15,6 +15,14 @@ body {
 
 /** Styles Formulaire **/
 
+h1{
+  font-size: 1em;
+}
+
+.navigation p{
+  font-size: 0.8em;
+}
+
 .form1{
   display: flex;
   flex-direction: row;
@@ -42,7 +50,7 @@ form label{
 
 label .fa-map-marker-alt{
   color:#000;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
@@ -57,9 +65,61 @@ label .fa-map-marker-alt{
 
 
 
-
-
 /** Styles Filtres **/
+
+
+.containeur-filtre{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.containeur-filtre h2{
+  margin: 42px 5px 20px 5px;
+  font-size: 0.9em;
+}
+
+.bouton{
+  display: block;
+  border-radius: 30px;
+  font-size: 15px;
+  background-color: #FFF;
+  border: 1px solid #F2F2F2;
+  height: 50px;
+  margin: 30px 5px 20px 5px;
+  }
+
+.filtre_eco{
+  width: 160px;
+}
+
+ .fa-money-bill-wave{
+  margin-right: 22px;
+}
+
+.filtre_fami{
+  width: 120px;
+}
+
+ .fa-child{
+  margin-right: 10px;
+}
+
+.filtre_roman{
+  width: 160px;
+}
+
+.fa-heart{
+  margin-right: 25px;
+}
+
+.filtre_animaux{
+  width: 200px;
+}
+
+.fa-child{
+  margin-right: 25px;
+}
 
 .info{
   display: flex;
