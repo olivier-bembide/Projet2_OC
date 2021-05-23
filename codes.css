@@ -429,10 +429,6 @@ figcaption p:nth-child(1){
 }
 
 
-
-
-
-
 /** Styles Footer **/
 
 .sec-footer {
@@ -472,27 +468,76 @@ footer li a{
 
 
 
+/** Styles Hébergement Marseille **/
+
+@media screen and (min-width: 454px) and (max-width: 678px){
+
+  .hebergements-marseille{
+    display:flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .container-hebergement{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .sec-droite{
+    margin-bottom: 1.5em
+  }
+  .hebergement{
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  .sec-gauche img{
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+
+  .la-cannebiere img, .hotel-du-port img, .les-mouettes img{
+    width: 9em;
+  }
+
+
+}
+
+
+
 /** Styles Activités à Marseille @media screen **/
 
 @media screen and (min-width: 454px) and (max-width: 678px){
 
-  body{
-    margin: 0 auto;
-  }
   .cont-activites-marseille{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .range{
-    display: block;
+  .haut img, .bas img{
+    width: 18em;
+    height: 9em ;
+    border-radius: 10px;
+    margin: 0px;
   }
 
-  .range img{
-    min-width: 15em;
-    flex-grow: 1;
-  }
+  .vieux-port img, .calanques img{
+  width: 18em;
+  height: 9em;
+  border-radius: 10px;
+}
+
+.calanques, .bas, .vieux-port{
+  margin-bottom: 1.87em;
+}
+
+
+
 }
 
 
@@ -541,7 +586,7 @@ footer li a{
 }
 
 @media screen and (min-width: 679px) and (max-width: 1013px){
-  
+
   .sec-footer{
     display: flex;
     flex-direction: column;
