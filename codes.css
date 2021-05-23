@@ -7,6 +7,7 @@ body {
   margin: 0 auto;
 }
 
+
 /** Styles Menu de navigation **/
 
   header{
@@ -131,7 +132,7 @@ label .fa-map-marker-alt{
   width: 160px;
 }
 
- .fa-money-bill-wave{
+.fa-money-bill-wave{
   margin-right: 22px;
 }
 
@@ -139,7 +140,7 @@ label .fa-map-marker-alt{
   width: 120px;
 }
 
- .fa-child{
+.fa-child{
   margin-right: 10px;
 }
 
@@ -457,7 +458,7 @@ footer li{
 
 footer li a{
   text-decoration: none;
-  color: black; 
+  color: black;
 }
 
 
