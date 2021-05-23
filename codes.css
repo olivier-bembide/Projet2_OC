@@ -468,13 +468,13 @@ footer li a{
 
 
 
-/** Styles  @media screen **/
+/** Styles  @media Queries **/
 
 
 
 /** Styles Activités à Marseille @media screen **/
 
-@media screen and (max-width: 678px){
+@media screen and (min-width: 454px) and (max-width: 678px){
 
   body{
     margin: 0 auto;
@@ -498,12 +498,9 @@ footer li a{
 
 
 
-
-
-
 /** Styles Footer @media screen  **/
 
-@media screen and (max-width: 678px) {
+@media screen and (min-width: 454px) and (max-width: 678px) {
 
   body{
     margin: 0 auto;
@@ -511,7 +508,11 @@ footer li a{
 
   footer{
     min-width: 20em;
-    margin: 0;
+  }
+
+  footer{
+    margin-top:1.25em ;
+    width: 100%;
   }
 
   footer h4{
@@ -519,10 +520,10 @@ footer li a{
   font-size: 0.8em;
 }
 
-footer ul{
- position: relative;
- right: 40px;
-}
+  footer ul{
+    position: relative;
+    right: 40px;
+  }
 
 
   .sec-footer {
@@ -537,6 +538,20 @@ footer ul{
     margin-left: 40px;
   }
 
+}
+
+@media screen and (min-width: 679px) and (max-width: 1013px){
+  
+  .sec-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .sec-footer h4{
+    display: block;
+    width: 100%;
+  }
 
 }
 
