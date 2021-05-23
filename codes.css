@@ -256,6 +256,11 @@ main div{
   margin-right: 20px;
 }
 
+
+.sec-gauche article{
+  display: flex;
+}
+
 .sec-droite{
   flex-basis: 36%;
   background-color: #f2f2f2;
