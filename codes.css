@@ -43,6 +43,12 @@ body {
     height: 50px;
   }
 
+  .noir a{
+    color: black;
+  }
+
+
+
 
 
 /** Styles Formulaire **/
@@ -447,6 +453,11 @@ footer li{
   line-height: 30px;
   list-style-type: none;
   font-size: 0.8em;
+}
+
+footer li a{
+  text-decoration: none;
+  color: black; 
 }
 
 
