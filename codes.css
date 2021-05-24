@@ -129,15 +129,15 @@ label .fa-map-marker-alt{
   }
 
 .filtre_eco{
-  width: 160px;
+  width: 150px;
 }
 
 .fa-money-bill-wave{
-  margin-right: 22px;
+  margin-right: 15px;
 }
 
 .filtre_fami{
-  width: 120px;
+  width: 115px;
 }
 
 .fa-child{
@@ -184,8 +184,6 @@ label .fa-map-marker-alt{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 
 .containeur-populaires{
@@ -203,8 +201,6 @@ label .fa-map-marker-alt{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 
 .titre{
@@ -294,7 +290,7 @@ figcaption p{
   border-radius: 1.25em;
   background-color: #FFF;
   height: 9.93em;
-  width: auto;
+  /* width: auto; */
 }
 
 .titre-populaires{
@@ -467,49 +463,122 @@ footer li a{
 /** Styles  @media Queries **/
 
 
-
-/** Styles Hébergement Marseille **/
+/** Styles Navigation - @media Queries **/
 
 @media screen and (min-width: 454px) and (max-width: 678px){
+
+  header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  nav ul li:nth-child(3){
+    position: relative;
+    bottom: 3em;
+    right: 4em;
+    }
+
+    header{
+      margin: 0 auto;
+      width: 100%;
+    }
+
+}
+
+
+
+
+/** Styles formulaires et Filtres - @media Queries **/
+
+
+@media screen and (min-width: 454px) and (max-width: 678px){
+  .info p:nth-child(2){
+    font-size:0.8em;
+  }
+
+  h1{
+    font-size: 1.2em;
+  }
+
+}
+
+
+
+/** Styles hébergement à Marseille - @media Querie**/
+
+@media screen and (min-width: 454px) and (max-width: 678px){
+
 
   .hebergements-marseille{
     display:flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
+
   }
 
   .container-hebergement{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
   }
 
   .sec-droite{
-    margin-bottom: 1.5em
-  }
-  .hebergement{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
     flex-grow: 0;
-    flex-shrink: 1;
+    margin: 0 auto;
+    width: auto;
+    margin-bottom: 2em;
+    border-radius: 0;
   }
 
-  .sec-gauche img{
+  .sec-gauche{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    margin: 0 auto;
+    width: auto;
+    margin-bottom: 2em;
+    background-color: #FFF;
+  }
+
+  .hebergement{
+    margin: 0 auto;
     flex-grow: 1;
-    flex-shrink: 1;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
+
   }
 
+  /*
+  .hebergement{
+    min-width: auto;
+    height: 9.5em;
+  }
+    */
 
   .la-cannebiere img, .hotel-du-port img, .les-mouettes img{
-    width: 9em;
+    width: 17em;
   }
 
+  .de-la-mer img, .chez-amina img, .le-panier img{
+    width: 17em;
+  }
 
 }
 
 
-
-/** Styles Activités à Marseille @media screen **/
+/** Styles Activités à Marseille - @media Queries **/
 
 @media screen and (min-width: 454px) and (max-width: 678px){
 
@@ -536,20 +605,14 @@ footer li a{
   margin-bottom: 1.87em;
 }
 
-
-
 }
 
 
 
-
-/** Styles Footer @media screen  **/
+/** Styles Footer - @media Queries  **/
 
 @media screen and (min-width: 454px) and (max-width: 678px) {
 
-  body{
-    margin: 0 auto;
-  }
 
   footer{
     min-width: 20em;
@@ -557,7 +620,7 @@ footer li a{
 
   footer{
     margin-top:1.25em ;
-    width: 100%;
+    width: auto;
   }
 
   footer h4{
